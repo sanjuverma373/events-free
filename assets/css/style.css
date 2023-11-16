@@ -310,6 +310,26 @@
 
 }
 
+.line-img-h::after{
+  content: "";
+  width: 10%;
+  height: 8px;
+  background-color: #01c8ff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+.line-img-h::before{
+  content: "";
+  width: 90%;
+  height: 8px;
+  background-color: #2c49fe;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+
 /*----------------------------------- nav section -----------------------------------*/
 
 .nav-line::before {
