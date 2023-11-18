@@ -33,20 +33,22 @@
 
     <div id="preloader">
         <div
-          class="loader_bg bg-black vh-100 d-flex align-items-center justify-content-center  position-fixed  top-0 start-0 w-100 z-6">
-          <div class="d-flex align-items-center justify-content-center preloder-img ">
-            <img src="./assets/images/nav-img-1.png" alt="">
-            <h2 class="fs-xxl fw-700 blue ff-poppins ">Events<span
-                    class="fs-xxl fw-700 light-blue ff-poppins">Free</span></h2>
-          </div>
+            class="loader_bg bg-black vh-100 d-flex align-items-center justify-content-center  position-fixed  top-0 start-0 w-100 z-6">
+            <div class="d-flex align-items-center justify-content-center preloder-img ">
+                <img src="./assets/images/nav-img-1.png" alt="">
+                <h2 class="fs-xxl fw-700 blue ff-poppins ">Events<span
+                        class="fs-xxl fw-700 light-blue ff-poppins">Free</span></h2>
+            </div>
         </div>
-      </div>
+    </div>
 
     <!--------------------------------------- backtotop --------------------------------------->
     <div id="backtotop" class=" d-flex align-items-center justify-content-center circle back-top-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
     </div>
     <header class="bg-img flow-hidden ">
         <div class="container">
@@ -385,11 +387,13 @@
                 <div class="col-lg-6 col-12 my-5 ">
                     <div class="row">
                         <div data-aos="flip-left" class="col-md-6 col-sm-12 ">
-                            <div class="cards2">
-                                <img class="w-100 common-img" src="./assets/images/sec-4-img-1.png" alt="#">
-                                <p class="fs-sm1 fw-400 black pl-25 ff-poppins pt-13">09/23/2021</p>
-                                <p class="fs-lg1 fw-500 black pl-25 pt-5 ff-poppins">Lorem ipsum</p>
-                                <p class="fs-md fw-400 black pl-25 pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
+                            <div class="cards2 flow-hidden">
+                                <div class="flow-hidden">
+                                    <img class="w-100 common-img" src="./assets/images/sec-4-img-1.png" alt="#">
+                                </div>
+                                <p class="fs-sm1 fw-400 black ff-poppins pt-13">09/23/2021</p>
+                                <p class="fs-lg1 fw-500 black pt-5 ff-poppins">Lorem ipsum</p>
+                                <p class="fs-md fw-400 black pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit.
                                     Nunc
                                     efficitur urna
@@ -397,11 +401,13 @@
                             </div>
                         </div>
                         <div data-aos="flip-right" class=" col-md-6 col-sm-12">
-                            <div class="cards2">
-                                <img class="w-100 common-img" src="./assets/images/sec-4-img-2.png" alt="#">
-                                <p class="fs-sm1 fw-400 black pl-25 ff-poppins pt-13">09/23/2021</p>
-                                <p class="fs-lg1 fw-500 black pl-25 pt-5 ff-poppins ">Lorem ipsum</p>
-                                <p class="fs-md fw-400 black pl-25 pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
+                            <div class="cards2 flow-hidden">
+                                <div class="flow-hidden">
+                                    <img class="w-100 common-img" src="./assets/images/sec-4-img-2.png" alt="#">
+                                </div>
+                                <p class="fs-sm1 fw-400 black  ff-poppins pt-13">09/23/2021</p>
+                                <p class="fs-lg1 fw-500 black pt-5 ff-poppins ">Lorem ipsum</p>
+                                <p class="fs-md fw-400 black pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit.
                                     Nunc
                                     efficitur urna
@@ -591,9 +597,9 @@
         });
         window.addEventListener('scroll', function () {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                backToTop.style.display="block";
+                backToTop.style.display = "block";
             } else {
-                backToTop.style.display="none";
+                backToTop.style.display = "none";
             }
         });
 

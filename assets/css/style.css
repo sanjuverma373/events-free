@@ -516,13 +516,10 @@ background: rgba(44, 73, 254, 0.74);
 }
 
 .common-img {
-  padding-top: 10px;
-  padding-right: 11px;
-  padding-left: 13px;
   transition: .4s;
 }
 .common-img:hover {
- transform: scale(0.9);
+ transform: scale(1.8);
 }
 
 
@@ -621,6 +618,7 @@ background: rgba(44, 73, 254, 0.74);
   border-radius: 5px;
   background: #FFF;
   transition: .4s;
+  padding: 12px;
   box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06); 
 }
 
@@ -676,8 +674,6 @@ background: rgba(44, 73, 254, 0.74);
 .w-50 {
   width: 50%;
 }
-
-
 
 .email {
   border: 1px solid rgba(0, 0, 0, 0.4);
