@@ -111,6 +111,10 @@
   font-family: 'Yantramanav', sans-serif;
 }
 
+.d_none{
+  display: none;
+}
+
 
 .d-flex {
   display: flex;
@@ -273,6 +277,10 @@
   margin-top: 265px;
 }
 
+.mb-40{
+  margin-bottom: 40px;
+}
+
 
 
 
@@ -304,10 +312,15 @@
 }
 
 .get-btn:hover {
+  animation: common-btn 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background:#2c49fe;
+}
 
-  border: 1px solid #2c49fe;
-  background: transparent;
-
+@keyframes common-btn {
+  0% {
+      box-shadow: 0 0 #2C49FE;
+  }
 }
 
 .line-img-h::after {
@@ -400,9 +413,9 @@
 }
 
 .nav-btn:hover {
-
-  border: 1px solid #2C49FE;
-  background: transparent;
+  animation: common-btn 1s;
+  box-shadow: 0 0 0 0.7em transparent;
+  background:#2c49fe;
 }
 
 .nav-btn {
@@ -415,9 +428,10 @@
 
 
 .box {
-  background-color: #3C50D4;
+  border-radius: 150px;
+background: rgba(44, 73, 254, 0.74);
   padding: 17px 23px;
-  border-radius: 50px;
+  
 }
 
 .loco {
@@ -457,9 +471,15 @@
 }
 
 .go-cheak:hover {
-  background: transparent;
-  color: #FFF;
-  border: 1px solid #fff;
+  animation: common-btn1 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    background:#fff;
+}
+
+@keyframes common-btn1 {
+  0% {
+      box-shadow: 0 0 #fff;
+  }
 }
 
 .get-more {
@@ -495,10 +515,14 @@
 
 }
 
-.img {
+.common-img {
   padding-top: 10px;
   padding-right: 11px;
   padding-left: 13px;
+  transition: .4s;
+}
+.common-img:hover {
+ transform: scale(0.9);
 }
 
 
@@ -507,10 +531,11 @@
 .card1 {
   border-radius: 5px;
   border: 1px solid #2C49FE;
-  background: #FFF;
-  width: 100%;
+  background: #FFF; 
   margin-right: 15px;
   margin-top: 50px;
+  transition: .4s;
+  padding-top: 15px;
 }
 
 .card1:hover {
@@ -595,14 +620,10 @@
 .cards2 {
   border-radius: 5px;
   background: #FFF;
-  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06);
+  transition: .4s;
+  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06); 
 }
 
-.cards3 {
-  border-radius: 5px;
-  background: #FFF;
-  box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06);
-}
 
 /* footer */
 .mx-315 {
@@ -637,20 +658,19 @@
   min-height: 100vh;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .btns3 {
 
   width: 100%;
-  padding: 11px 28px;
-  justify-content: space-between;
-  align-items: flex-start;
+  padding: 11px 28px; 
   border-radius: 23px;
   background: #2C49FE;
   border: solid #2C49FE;
   margin-bottom: 90px;
+}
+.btns3:hover {
+  animation: common-btn 1s;
+  box-shadow: 0 0 0 0.7em transparent;
+  background:#2c49fe;
 }
 
 .w-50 {
@@ -722,6 +742,117 @@ textarea {
   margin-top: 43px;
 }
 
+.f-icon{
+  transition: .4s;
+}
+.f-icon:hover{
+  transform: translateY(-40%);
+}
+
+.f-line::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  border-radius: 15px;
+  background: var(--color-white);
+  right: 0;
+  bottom: -30%;
+  transition: .5s;
+}
+
+.f-line:hover::before {
+  width: 100%;
+  left: 0;
+
+}
+
+
+
+/* -------------------------------------preloader------------------------------------- */
+.loader_bg {
+  /* position: fixed; */
+  z-index: 9;
+  background: #000;
+}
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+.vh-100{
+  min-height: 100vh;
+}
+
+.position-fixed{
+  position: fixed;
+}
+
+.z-6{
+  z-index: 6;
+}
+
+.start-0{
+  left: 0;
+}
+
+.top-0{
+  top: 0;
+}
+
+.preloder-img{
+animation-name: lodar;
+animation-duration: 3s;
+animation-timing-function: linear;
+}
+@keyframes lodar{
+  0%{
+    scale: 0.7;
+  }
+  25%{
+    scale: 1.1;
+  }
+  50%{
+    scale: 0.7;
+  }
+  75%{
+    scale: 1.1;
+  }
+  0%{
+    scale: 0.7;
+  }
+}
+
+/* ------------------------------------back-to-top------------------------------------ */
+#backtotop {
+  transition: .3s;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+  z-index: 2;
+  cursor: pointer;
+  animation: float 2s linear infinite;
+}
+
+
+.display_none {
+  display: none;
+}
+
+.display_block {
+  display: block;
+}
+
+.w_100 {
+  width: 25%;
+}
+
+.circle{
+  border-radius: 50px ;
+  padding: 1px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* media screens */
 @media (min-width:576px) {
@@ -944,3 +1075,5 @@ textarea {
   }
 
 }
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -29,8 +29,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="sec-flow">
-    <header class="bg-img overflow-hidden ">
+<body class="flow-hidden">
+
+    <div id="preloader">
+        <div
+          class="loader_bg bg-black vh-100 d-flex align-items-center justify-content-center  position-fixed  top-0 start-0 w-100 z-6">
+          <div class="d-flex align-items-center justify-content-center preloder-img ">
+            <img src="./assets/images/nav-img-1.png" alt="">
+            <h2 class="fs-xxl fw-700 blue ff-poppins ">Events<span
+                    class="fs-xxl fw-700 light-blue ff-poppins">Free</span></h2>
+          </div>
+        </div>
+      </div>
+
+    <!--------------------------------------- backtotop --------------------------------------->
+    <div id="backtotop" class=" d-flex align-items-center justify-content-center circle back-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg>
+    </div>
+    <header class="bg-img flow-hidden ">
         <div class="container">
             <nav>
                 <div>
@@ -46,19 +64,19 @@
                             <span class="cross-6"></span>
                         </label>
                         <ul class="d-flex align-items-center justify-content-center gap-60 nav-box" id="nav-bar">
-                            <li><a class="white fs-md fw-400 home ff-poppins position-relative fw-h nav-line "
+                            <li><a class="white fs-md fw-400 home ff-poppins position-relative fw-h nav-line home "
                                     href="#home">Home</a>
                             </li>
-                            <li><a class="white fs-md fw-400 about ff-poppins position-relative fw-h nav-line"
+                            <li><a class="white fs-md fw-400 about ff-poppins position-relative fw-h nav-line about"
                                     href="#about">EVENTS</a>
                             </li>
-                            <li><a class="white fs-md fw-400 services ff-poppins position-relative fw-h nav-line"
+                            <li><a class="white fs-md fw-400 services ff-poppins position-relative fw-h nav-line feed"
                                     href="#services">FEED</a>
                             </li>
-                            <li><a class="white fs-md fw-400 pricing ff-poppins position-relative fw-h nav-line "
+                            <li><a class="white fs-md fw-400 pricing ff-poppins position-relative fw-h nav-line pricing "
                                     href="#pricing">USER NAME</a>
                             </li>
-                            <li><a class="nav-btn white fs-md fw-600 ff-poppins " href="">Log Out</a></li>
+                            <li><a class="nav-btn white fs-md fw-600 ff-poppins logout " href="">Log Out</a></li>
                             </li>
                         </ul>
                     </div>
@@ -79,7 +97,7 @@
                 </div>
                 <div class="blue-area position-relative mt-143">
                     <div class="container">
-                        <div class=" row box align-items-center">
+                        <div class=" row box align-items-center justify-content-center ">
                             <div
                                 class="col-xl-3 col-md-6 col-12 mb-24 mb-xl-0 br_xl-right d-flex align-items-center justify-content-center">
                                 <span>
@@ -104,10 +122,12 @@
                             <div
                                 class="col-xl-3 col-md-6 col-12 mb-24 mb-xl-0 br_xl-right d-flex align-items-center justify-content-center">
                                 <span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20.1663 2.33333H18.9997C18.3553 2.33333 17.833 1.811 17.833 1.16667V1.16667C17.833 0.857247 17.7101 0.560501 17.4913 0.341709C17.2725 0.122916 16.9758 0 16.6663 0C16.3569 0 16.0602 0.122916 15.8414 0.341709C15.6226 0.560501 15.4997 0.857247 15.4997 1.16667V1.16667C15.4997 1.811 14.9773 2.33333 14.333 2.33333H9.66634C9.02201 2.33333 8.49967 1.811 8.49967 1.16667V1.16667C8.49967 0.857247 8.37676 0.560501 8.15797 0.341709C7.93917 0.122916 7.64243 0 7.33301 0C7.02359 0 6.72684 0.122916 6.50805 0.341709C6.28926 0.560501 6.16634 0.857247 6.16634 1.16667V1.16667C6.16634 1.811 5.64401 2.33333 4.99967 2.33333H3.83301C2.90475 2.33333 2.01451 2.70208 1.35813 3.35846C0.701757 4.01484 0.333008 4.90508 0.333008 5.83333V19.8333C0.333008 20.7616 0.701757 21.6518 1.35813 22.3082C2.01451 22.9646 2.90475 23.3333 3.83301 23.3333H20.1663C21.0946 23.3333 21.9848 22.9646 22.6412 22.3082C23.2976 21.6518 23.6663 20.7616 23.6663 19.8333V5.83333C23.6663 4.90508 23.2976 4.01484 22.6412 3.35846C21.9848 2.70208 21.0946 2.33333 20.1663 2.33333ZM21.333 19.8333C21.333 20.1428 21.2101 20.4395 20.9913 20.6583C20.7725 20.8771 20.4758 21 20.1663 21H3.83301C3.52359 21 3.22684 20.8771 3.00805 20.6583C2.78926 20.4395 2.66634 20.1428 2.66634 19.8333V19.8333C2.66634 15.323 6.32268 11.6667 10.833 11.6667H13.1663C17.6767 11.6667 21.333 15.323 21.333 19.8333V19.8333ZM21.333 5.83333C21.333 7.76633 19.766 9.33333 17.833 9.33333H6.16634C4.23334 9.33333 2.66634 7.76633 2.66634 5.83333V5.83333C2.66634 5.52391 2.78926 5.22717 3.00805 5.00838C3.22684 4.78958 3.52359 4.66667 3.83301 4.66667H4.99967C5.64401 4.66667 6.16634 5.189 6.16634 5.83333V5.83333C6.16634 6.14275 6.28926 6.4395 6.50805 6.65829C6.72684 6.87708 7.02359 7 7.33301 7C7.64243 7 7.93917 6.87708 8.15797 6.65829C8.37676 6.4395 8.49967 6.14275 8.49967 5.83333V5.83333C8.49967 5.189 9.02201 4.66667 9.66634 4.66667H14.333C14.9773 4.66667 15.4997 5.189 15.4997 5.83333V5.83333C15.4997 6.14275 15.6226 6.4395 15.8414 6.65829C16.0602 6.87708 16.3569 7 16.6663 7C16.9758 7 17.2725 6.87708 17.4913 6.65829C17.7101 6.4395 17.833 6.14275 17.833 5.83333V5.83333C17.833 5.189 18.3553 4.66667 18.9997 4.66667H20.1663C20.4758 4.66667 20.7725 4.78958 20.9913 5.00838C21.2101 5.22717 21.333 5.52391 21.333 5.83333V5.83333Z" fill="white"/>
-                                        </svg>
-                                        
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.1663 2.33333H18.9997C18.3553 2.33333 17.833 1.811 17.833 1.16667V1.16667C17.833 0.857247 17.7101 0.560501 17.4913 0.341709C17.2725 0.122916 16.9758 0 16.6663 0C16.3569 0 16.0602 0.122916 15.8414 0.341709C15.6226 0.560501 15.4997 0.857247 15.4997 1.16667V1.16667C15.4997 1.811 14.9773 2.33333 14.333 2.33333H9.66634C9.02201 2.33333 8.49967 1.811 8.49967 1.16667V1.16667C8.49967 0.857247 8.37676 0.560501 8.15797 0.341709C7.93917 0.122916 7.64243 0 7.33301 0C7.02359 0 6.72684 0.122916 6.50805 0.341709C6.28926 0.560501 6.16634 0.857247 6.16634 1.16667V1.16667C6.16634 1.811 5.64401 2.33333 4.99967 2.33333H3.83301C2.90475 2.33333 2.01451 2.70208 1.35813 3.35846C0.701757 4.01484 0.333008 4.90508 0.333008 5.83333V19.8333C0.333008 20.7616 0.701757 21.6518 1.35813 22.3082C2.01451 22.9646 2.90475 23.3333 3.83301 23.3333H20.1663C21.0946 23.3333 21.9848 22.9646 22.6412 22.3082C23.2976 21.6518 23.6663 20.7616 23.6663 19.8333V5.83333C23.6663 4.90508 23.2976 4.01484 22.6412 3.35846C21.9848 2.70208 21.0946 2.33333 20.1663 2.33333ZM21.333 19.8333C21.333 20.1428 21.2101 20.4395 20.9913 20.6583C20.7725 20.8771 20.4758 21 20.1663 21H3.83301C3.52359 21 3.22684 20.8771 3.00805 20.6583C2.78926 20.4395 2.66634 20.1428 2.66634 19.8333V19.8333C2.66634 15.323 6.32268 11.6667 10.833 11.6667H13.1663C17.6767 11.6667 21.333 15.323 21.333 19.8333V19.8333ZM21.333 5.83333C21.333 7.76633 19.766 9.33333 17.833 9.33333H6.16634C4.23334 9.33333 2.66634 7.76633 2.66634 5.83333V5.83333C2.66634 5.52391 2.78926 5.22717 3.00805 5.00838C3.22684 4.78958 3.52359 4.66667 3.83301 4.66667H4.99967C5.64401 4.66667 6.16634 5.189 6.16634 5.83333V5.83333C6.16634 6.14275 6.28926 6.4395 6.50805 6.65829C6.72684 6.87708 7.02359 7 7.33301 7C7.64243 7 7.93917 6.87708 8.15797 6.65829C8.37676 6.4395 8.49967 6.14275 8.49967 5.83333V5.83333C8.49967 5.189 9.02201 4.66667 9.66634 4.66667H14.333C14.9773 4.66667 15.4997 5.189 15.4997 5.83333V5.83333C15.4997 6.14275 15.6226 6.4395 15.8414 6.65829C16.0602 6.87708 16.3569 7 16.6663 7C16.9758 7 17.2725 6.87708 17.4913 6.65829C17.7101 6.4395 17.833 6.14275 17.833 5.83333V5.83333C17.833 5.189 18.3553 4.66667 18.9997 4.66667H20.1663C20.4758 4.66667 20.7725 4.78958 20.9913 5.00838C21.2101 5.22717 21.333 5.52391 21.333 5.83333V5.83333Z"
+                                            fill="white" />
+                                    </svg>
 
                                 </span>
                                 <div class="loco d-flex flex-column">
@@ -116,16 +136,29 @@
                                 </div>
                             </div>
                             <div
-                                class="col-xl-3 col-md-6 col-12 mb_24 mb-xl-0 br_xl-right d-flex align-items-center justify-content-center">
+                                class="col-xl-3 col-md-6 col-12 mb-24 mb-xl-0 br_xl-right d-flex align-items-center justify-content-center">
                                 <span>
-                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M15.5 16.792C17.6401 16.792 19.375 15.0571 19.375 12.917C19.375 10.7769 17.6401 9.04199 15.5 9.04199C13.3599 9.04199 11.625 10.7769 11.625 12.917C11.625 15.0571 13.3599 16.792 15.5 16.792Z"
+                                            d="M20.8991 24.69L20.0991 18.285C19.9857 17.3778 19.5448 16.5432 18.8593 15.9383C18.1738 15.3333 17.2909 14.9996 16.3766 15H13.6216C12.7078 15.0003 11.8254 15.3342 11.1405 15.9391C10.4555 16.544 10.0149 17.3782 9.9016 18.285L9.10035 24.69C9.05638 25.0419 9.08777 25.3991 9.19245 25.7379C9.29712 26.0768 9.47269 26.3894 9.70748 26.6552C9.94228 26.921 10.2309 27.1338 10.5543 27.2794C10.8776 27.4251 11.2282 27.5003 11.5828 27.5H18.4178C18.7724 27.5001 19.1229 27.4248 19.446 27.279C19.7692 27.1333 20.0577 26.9205 20.2924 26.6547C20.527 26.389 20.7025 26.0764 20.8071 25.7376C20.9117 25.3989 20.9431 25.0418 20.8991 24.69V24.69Z"
                                             stroke="white" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                         <path
-                                            d="M15.5003 2.5835C12.7598 2.5835 10.1314 3.67218 8.19356 5.61006C6.25568 7.54794 5.16699 10.1763 5.16699 12.9168C5.16699 15.3607 5.68624 16.9597 7.10449 18.7293L15.5003 28.4168L23.8962 18.7293C25.3144 16.9597 25.8337 15.3607 25.8337 12.9168C25.8337 10.1763 24.745 7.54794 22.8071 5.61006C20.8692 3.67218 18.2409 2.5835 15.5003 2.5835V2.5835Z"
+                                            d="M15 10C17.0711 10 18.75 8.32107 18.75 6.25C18.75 4.17893 17.0711 2.5 15 2.5C12.9289 2.5 11.25 4.17893 11.25 6.25C11.25 8.32107 12.9289 10 15 10Z"
+                                            stroke="white" stroke-width="2" />
+                                        <path
+                                            d="M5 13.75C6.38071 13.75 7.5 12.6307 7.5 11.25C7.5 9.86929 6.38071 8.75 5 8.75C3.61929 8.75 2.5 9.86929 2.5 11.25C2.5 12.6307 3.61929 13.75 5 13.75Z"
+                                            stroke="white" stroke-width="2" />
+                                        <path
+                                            d="M25 13.75C26.3807 13.75 27.5 12.6307 27.5 11.25C27.5 9.86929 26.3807 8.75 25 8.75C23.6193 8.75 22.5 9.86929 22.5 11.25C22.5 12.6307 23.6193 13.75 25 13.75Z"
+                                            stroke="white" stroke-width="2" />
+                                        <path
+                                            d="M5.00023 17.5H4.61773C4.02593 17.4999 3.4533 17.7098 3.0017 18.0923C2.5501 18.4747 2.24883 19.005 2.15148 19.5887L1.73523 22.0887C1.67549 22.4469 1.69451 22.8138 1.79094 23.1639C1.88738 23.514 2.05892 23.8389 2.29364 24.116C2.52836 24.393 2.82062 24.6156 3.1501 24.7683C3.47957 24.921 3.83835 25 4.20148 25H8.75023"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25 17.5H25.3825C25.9743 17.4999 26.5469 17.7098 26.9985 18.0923C27.4501 18.4747 27.7514 19.005 27.8487 19.5887L28.265 22.0887C28.3247 22.4469 28.3057 22.8138 28.2093 23.1639C28.1129 23.514 27.9413 23.8389 27.7066 24.116C27.4719 24.393 27.1796 24.6156 26.8501 24.7683C26.5207 24.921 26.1619 25 25.7987 25H21.25"
                                             stroke="white" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </svg>
@@ -137,13 +170,10 @@
                                 </div>
                             </div>
                             <div
-                                class="col-xl-3 col-md-6 col-12 mb_24 mb-xl-0  d-flex align-items-center justify-content-center">
+                                class="col-xl-3 col-md-6 col-12  mb-xl-0  d-flex align-items-center justify-content-center">
                                 <a href="" class="go-cheak fs-lg fw-700 blue ff-poppins ">GO CHECK</a>
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -151,7 +181,7 @@
     </header>
 
     <!-- section-2 -->
-    <div class="overflow-hidden ">
+    <div class="flow-hidden ">
         <div class="container">
             <div class="row align-items-center">
                 <div data-aos="flip-right" class="col-xl-6 ">
@@ -238,7 +268,7 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <p class="help fs-xl fw-500 dark-blue text-center pt-2">Help</p>
+                                <p class="help fs-xl fw-500 dark-blue text-center pt-2 ff-poppins">Help</p>
                                 <p
                                     class="sharing-para  fs-md fw-400 text-center  dark-blue mx-174 pb-17 pt-2 ff-poppins">
                                     Lorem
@@ -254,7 +284,7 @@
     </div>
 
     <!-- section-3 -->
-    <section class="img-bg overflow-hidden ">
+    <section class="img-bg flow-hidden ">
         <div class="container w-100 pb-46">
             <div data-aos="flip-up" class="d-flex flex-column  align-items-center">
                 <p class="fs-xxl1 fw-700 white text-center mx-708 ff-poppins pt-50">Lorem ipsum dolor sit amet,
@@ -269,7 +299,7 @@
             </div>
             <div class="row ">
                 <div data-aos="flip-up"
-                    class="col-lg-3 col-md-4 col-sm-6 col-12  d-flex flex-column  align-items-center">
+                    class="col-lg-3 col-md-4 col-sm-6 col-6 mb-40 d-flex flex-column  align-items-center">
                     <a href=""><svg width="39" height="39" viewBox="0 0 39 39" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -283,7 +313,7 @@
 
                 </div>
                 <div data-aos="flip-up"
-                    class="col-lg-3 col-md-4 col-sm-6 col-12   d-flex flex-column align-items-center">
+                    class="col-lg-3 col-md-4 col-sm-6 col-6 mb-40  d-flex flex-column align-items-center">
                     <a href=""><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -298,7 +328,7 @@
 
                 </div>
                 <div data-aos="flip-up"
-                    class="col-lg-3 col-md-4 col-sm-6 col-12   d-flex flex-column align-items-center">
+                    class="col-lg-3 col-md-4 col-sm-6 col-6 mb-40  d-flex flex-column align-items-center">
                     <a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -308,12 +338,12 @@
 
                     </a>
 
-                    <p class="fs-xxl1 fw-700 white pt-3">50</p>
-                    <p class="fs-md1 fw-400 white">SPEAKERS</p>
+                    <p class="fs-xxl1 fw-700 white pt-3 ff-poppins">50</p>
+                    <p class="fs-md1 fw-400 white ff-poppins">SPEAKERS</p>
 
                 </div>
                 <div data-aos="flip-up"
-                    class="col-lg-3 col-md-4 col-sm-6 col-12   d-flex flex-column align-items-center">
+                    class="col-lg-3 col-md-4 col-sm-6 col-6 mb-40  d-flex flex-column align-items-center">
                     <a href=""><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -323,8 +353,8 @@
 
                     </a>
 
-                    <p class="fs-xxl1 fw-700 white pt-3">30</p>
-                    <p class="fs-md1 fw-400 white">AWARDS</p>
+                    <p class="fs-xxl1 fw-700 white pt-3 ff-poppins">30</p>
+                    <p class="fs-md1 fw-400 white ff-poppins">AWARDS</p>
 
                 </div>
             </div>
@@ -332,7 +362,7 @@
     </section>
 
     <!-- section-4 -->
-    <div class="overflow-hidden ">
+    <div>
         <div class="container">
             <div class="row align-items-center justify-content-center mt-153">
                 <div data-aos="flip-left" class="col-lg-6 col-12  d-flex flex-column">
@@ -352,11 +382,11 @@
                         arcu.</p>
                     <p class=" fs-md fw-700 black ff-poppins pt-15">LEARN MORE</p>
                 </div>
-                <div class="col-lg-6 col-12 ">
+                <div class="col-lg-6 col-12 my-5 ">
                     <div class="row">
                         <div data-aos="flip-left" class="col-md-6 col-sm-12 ">
                             <div class="cards2">
-                                <img class="w-100 img" src="./assets/images/sec-4-img-1.png" alt="#">
+                                <img class="w-100 common-img" src="./assets/images/sec-4-img-1.png" alt="#">
                                 <p class="fs-sm1 fw-400 black pl-25 ff-poppins pt-13">09/23/2021</p>
                                 <p class="fs-lg1 fw-500 black pl-25 pt-5 ff-poppins">Lorem ipsum</p>
                                 <p class="fs-md fw-400 black pl-25 pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
@@ -367,8 +397,8 @@
                             </div>
                         </div>
                         <div data-aos="flip-right" class=" col-md-6 col-sm-12">
-                            <div class="cards3">
-                                <img class="w-100 img" src="./assets/images/sec-4-img-2.png" alt="#">
+                            <div class="cards2">
+                                <img class="w-100 common-img" src="./assets/images/sec-4-img-2.png" alt="#">
                                 <p class="fs-sm1 fw-400 black pl-25 ff-poppins pt-13">09/23/2021</p>
                                 <p class="fs-lg1 fw-500 black pl-25 pt-5 ff-poppins ">Lorem ipsum</p>
                                 <p class="fs-md fw-400 black pl-25 pb-24 pt-5 ff-poppins">Lorem ipsum dolor sit amet,
@@ -386,7 +416,7 @@
 
 
     <!-- section-5 -->
-    <div class="overflow-hidden ">
+    <div class="flow-hidden ">
         <div class="container pt-100">
             <div class="row ">
                 <div data-aos="fade-right" class="col-lg-6 col-12 d-flex justify-content-center align-items-center  ">
@@ -440,8 +470,7 @@
     </div>
 
     <!-- footer -->
-
-    <footer class="bg-black pt-100 overflow-hidden ">
+    <footer class="bg-black pt-100 flow-hidden ">
         <div class="container">
             <div class="row ">
                 <div data-aos="fade-down" class="col-5 col-lg-5 col-12 ">
@@ -456,15 +485,16 @@
                             efficitur
                             urna in dictum suscipit. Suspendisse maximus ipsum sem. c </p>
                         <div class="d-flex align-items-center gap-16">
-                            <a href=""><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                            <a class="f-icon" href="https://www.instagram.com/accounts/login/" target="_blank"><svg
+                                    width="23" height="23" viewBox="0 0 23 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11.2 6.06667C10.1847 6.06667 9.19225 6.36773 8.34807 6.93179C7.5039 7.49585 6.84595 8.29756 6.45742 9.23556C6.06889 10.1736 5.96723 11.2057 6.1653 12.2015C6.36337 13.1972 6.85228 14.1119 7.57018 14.8298C8.28809 15.5477 9.20277 16.0366 10.1985 16.2347C11.1943 16.4328 12.2264 16.3311 13.1644 15.9426C14.1024 15.5541 14.9042 14.8961 15.4682 14.0519C16.0323 13.2078 16.3333 12.2153 16.3333 11.2C16.3318 9.83903 15.7905 8.53424 14.8281 7.57189C13.8658 6.60954 12.561 6.06821 11.2 6.06667V6.06667ZM11.2 15.4C10.3693 15.4 9.55729 15.1537 8.86661 14.6922C8.17592 14.2307 7.63759 13.5747 7.31971 12.8073C7.00182 12.0398 6.91864 11.1953 7.0807 10.3806C7.24276 9.5659 7.64277 8.81753 8.23015 8.23015C8.81753 7.64277 9.5659 7.24276 10.3806 7.0807C11.1953 6.91864 12.0398 7.00182 12.8073 7.31971C13.5747 7.63759 14.2307 8.17592 14.6922 8.86661C15.1537 9.55729 15.4 10.3693 15.4 11.2C15.3988 12.3135 14.9559 13.3811 14.1685 14.1685C13.3811 14.9559 12.3135 15.3988 11.2 15.4ZM16.3333 0H6.06667C4.45825 0.00182184 2.91622 0.641572 1.7789 1.7789C0.641572 2.91622 0.00182184 4.45825 0 6.06667V16.3333C0.00182184 17.9418 0.641572 19.4838 1.7789 20.6211C2.91622 21.7584 4.45825 22.3982 6.06667 22.4H16.3333C17.9418 22.3982 19.4838 21.7584 20.6211 20.6211C21.7584 19.4838 22.3982 17.9418 22.4 16.3333V6.06667C22.3982 4.45825 21.7584 2.91622 20.6211 1.7789C19.4838 0.641572 17.9418 0.00182184 16.3333 0V0ZM21.4667 16.3333C21.4651 17.6943 20.9238 18.9991 19.9614 19.9614C18.9991 20.9238 17.6943 21.4651 16.3333 21.4667H6.06667C4.7057 21.4651 3.40091 20.9238 2.43856 19.9614C1.4762 18.9991 0.934877 17.6943 0.933333 16.3333V6.06667C0.934877 4.7057 1.4762 3.40091 2.43856 2.43856C3.40091 1.4762 4.7057 0.934877 6.06667 0.933333H16.3333C17.6943 0.934877 18.9991 1.4762 19.9614 2.43856C20.9238 3.40091 21.4651 4.7057 21.4667 6.06667V16.3333ZM18.2 5.13333C18.2 5.31793 18.1453 5.49838 18.0427 5.65187C17.9401 5.80535 17.7944 5.92498 17.6238 5.99562C17.4533 6.06626 17.2656 6.08475 17.0846 6.04873C16.9035 6.01272 16.7372 5.92383 16.6067 5.7933C16.4762 5.66277 16.3873 5.49647 16.3513 5.31542C16.3153 5.13437 16.3337 4.94671 16.4044 4.77616C16.475 4.60562 16.5946 4.45985 16.7481 4.3573C16.9016 4.25474 17.0821 4.2 17.2667 4.2C17.5141 4.20031 17.7513 4.29874 17.9263 4.47371C18.1013 4.64868 18.1997 4.88589 18.2 5.13333V5.13333Z"
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href=""><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                            <a class="f-icon" href="https://www.facebook.com/" target="_blank"><svg width="24"
+                                    height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M12.0243 0C5.8356 0 0.799805 5.0344 0.799805 11.2238C0.799805 17.4132 5.8356 22.4476 12.0243 22.4476C18.213 22.4476 23.2488 17.4132 23.2488 11.2238C23.2488 5.0344 18.213 0 12.0243 0ZM12.0243 21.7C6.2479 21.7 1.5488 17.0002 1.5488 11.2238C1.5488 5.4474 6.2479 0.7476 12.0243 0.7476C17.8007 0.7476 22.4998 5.4474 22.4998 11.2238C22.4998 17.0002 17.8007 21.7 12.0243 21.7Z"
                                         fill="white" />
@@ -473,8 +503,8 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href=""><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                            <a class="f-icon" href="https://twitter.com/i/flow/login" target="_blank"><svg width="23"
+                                    height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1687_361)">
                                         <path
                                             d="M11.7997 -0.0239258C5.611 -0.0239258 0.575195 5.01047 0.575195 11.1999C0.575195 17.3893 5.611 22.4237 11.7997 22.4237C17.9884 22.4237 23.0242 17.3893 23.0242 11.1999C23.0242 5.01047 17.9884 -0.0239258 11.7997 -0.0239258ZM11.7997 21.6761C6.0233 21.6761 1.3242 16.9763 1.3242 11.1999C1.3242 5.42347 6.0233 0.723674 11.7997 0.723674C17.5761 0.723674 22.2752 5.42347 22.2752 11.1999C22.2752 16.9763 17.5761 21.6761 11.7997 21.6761Z"
@@ -492,17 +522,25 @@
                     <div class="row">
                         <ul data-aos="fade-up" class="col-3 col-md-3 col-6">
                             <li class="mb-11 fs-sm1 fw-700 white ff-poppins ">SERVICES</li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">News</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">About</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Ullamcorper</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Contact</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative f-line">News</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative f-line">About</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative f-line">Ullamcorper</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative f-line">Contact</a></li>
                         </ul>
                         <ul data-aos="fade-down" class="col-3 col-md-3 col-6">
                             <li class="mb-11 fs-sm1 fw-700 white ff-poppins">EVENTS</li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Ullamcorper</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Ullamcorper</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Ullamcorper</a></li>
-                            <li class="mb-11 "> <a href="#" class="fs-sm ff-poppins fw-400 white">Ullamcorper</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative  f-line">Ullamcorper</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative  f-line">Ullamcorper</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative  f-line">Ullamcorper</a></li>
+                            <li class="mb-11 "> <a href="#"
+                                    class="fs-sm ff-poppins fw-400 white position-relative  f-line">Ullamcorper</a></li>
                         </ul>
                         <div data-aos="fade-up" class="col-6 col-sm-12 col-md-6 col-12">
                             <p class="mb-11 fs-sm1 fw-700 white ff-poppins">GALLERY</p>
@@ -546,6 +584,81 @@
         AOS.init({
             duration: 2500,
             once: true
+        });
+        let backToTop = document.getElementById('backtotop')
+        backToTop.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
+        window.addEventListener('scroll', function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.style.display="block";
+            } else {
+                backToTop.style.display="none";
+            }
+        });
+
+        const preloader = document.getElementById("preloader");
+        setTimeout(() => {
+            document.getElementById("preloader").classList.add("d_none")
+            document.body.classList.remove("flow-hidden")
+
+        }, 2000);
+
+        let a = document.getElementById("nav-bar");
+        let cross4 = document.querySelector(".cross-4");
+        let cross5 = document.querySelector(".cross-5");
+        let cross6 = document.querySelector(".cross-6");
+        let menuIcon = document.querySelector("#menuIcon");
+        let home = document.querySelector(".home");
+        let about = document.querySelector(".about");
+        let feed = document.querySelector(".feed");
+        let pricing = document.querySelector(".pricing");
+        let logout = document.querySelector(".logout");
+
+        menuIcon.addEventListener("click", function () {
+            if (a.classList !== document.querySelector("fix-lft")) {
+                a.classList.toggle("fix-lft");
+                flow.classList.toggle("flow-hidden");
+                cross4.classList.toggle("cross-1");
+                cross5.classList.toggle("cross-2");
+                cross6.classList.toggle("cross-3")
+            }
+        });
+
+        home.addEventListener("click", function () {
+            a.classList.toggle("fix-lft");
+            flow.classList.remove("flow-hidden");
+            cross4.classList.toggle("cross-1");
+            cross5.classList.toggle("cross-2");
+            cross6.classList.toggle("cross-3");
+        });
+        about.addEventListener("click", function () {
+            a.classList.remove("fix-lft");
+            flow.classList.remove("flow-hidden");
+            cross4.classList.toggle("cross-1");
+            cross5.classList.toggle("cross-2");
+            cross6.classList.toggle("cross-3");
+        });
+        feed.addEventListener("click", function () {
+            a.classList.remove("fix-lft");
+            flow.classList.remove("flow-hidden");
+            cross4.classList.toggle("cross-1");
+            cross5.classList.toggle("cross-2");
+            cross6.classList.toggle("cross-3");
+        });
+        pricing.addEventListener("click", function () {
+            a.classList.remove("fix-lft");
+            flow.classList.remove("flow-hidden");
+            cross4.classList.toggle("cross-1");
+            cross5.classList.toggle("cross-2");
+            cross6.classList.toggle("cross-3");
+        });
+        logout.addEventListener("click", function () {
+            a.classList.remove("fix-lft");
+            flow.classList.remove("flow-hidden");
+            cross4.classList.toggle("cross-1");
+            cross5.classList.toggle("cross-2");
+            cross6.classList.toggle("cross-3");
         });
     </script>
 </body>
