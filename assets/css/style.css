@@ -310,7 +310,7 @@
 
 }
 
-.line-img-h::after{
+.line-img-h::after {
   content: "";
   width: 10%;
   height: 8px;
@@ -319,7 +319,8 @@
   bottom: -10px;
   right: 0;
 }
-.line-img-h::before{
+
+.line-img-h::before {
   content: "";
   width: 90%;
   height: 8px;
@@ -636,7 +637,7 @@
   min-height: 100vh;
 }
 
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 
@@ -703,6 +704,7 @@ textarea {
 .pt-100 {
   padding-top: 30px;
 }
+
 .show-moref {
   background: rgba(45, 60, 174, 0.53);
   height: 100%;
@@ -803,9 +805,9 @@ textarea {
   }
 
   .bg-img {
-   
+
     padding-bottom: 110px;
-  
+
   }
 
   .mt-150 {
@@ -942,5 +944,3 @@ textarea {
   }
 
 }
-
-

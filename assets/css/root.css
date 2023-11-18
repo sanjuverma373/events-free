@@ -1,4 +1,4 @@
-:root{
+:root {
         /* font-seze */
         --fs-sm: 10px;
         --fs-sm1: 12px;
@@ -11,101 +11,121 @@
         --fs-xxl: 26px;
         --fs-xxl1: 40px;
         --fs-xxl2: 37px;
-      
+
         /* font-weight */
-        --fw-400:400;
-        --fw-500:500;
-        --fw-600:600;
-        --fw-700:700;
+        --fw-400: 400;
+        --fw-500: 500;
+        --fw-600: 600;
+        --fw-700: 700;
 
         /* color */
-        --color-blue:#2c49fe;
-        --color-black:#000;
-        --color-white:#fff;
-        --color-dark-blue:#2d3cae;
-        --color-light-blue:#01c8ff;
+        --color-blue: #2c49fe;
+        --color-black: #000;
+        --color-white: #fff;
+        --color-dark-blue: #2d3cae;
+        --color-light-blue: #01c8ff;
         --color-black-2: #4D4D4D;
         --color-gray: #BEC5ED;
 
 }
 
 /* font-size*/
-.fs-sm{
+.fs-sm {
         font-size: var(--fs-sm);
 }
-.fs-sm1{
+
+.fs-sm1 {
         font-size: var(--fs-sm1);
 }
-.fs-md{
+
+.fs-md {
         font-size: var(--fs-md);
 }
-.fs-md1{
+
+.fs-md1 {
         font-size: var(--fs-md1);
 }
-.fs-lg{
+
+.fs-lg {
         font-size: var(--fs-lg);
 }
-.fs-lg1{
+
+.fs-lg1 {
         font-size: var(--fs-lg1);
 }
-.fs-xl{
+
+.fs-xl {
         font-size: var(--fs-xl);
 }
-.fs-xl1{
+
+.fs-xl1 {
         font-size: var(--fs-xl1);
 }
-.fs-xxl{
+
+.fs-xxl {
         font-size: var(--fs-xxl);
 }
-.fs-xxl1{
+
+.fs-xxl1 {
         font-size: var(--fs-xxl1);
 }
-.fs-xxl2{
+
+.fs-xxl2 {
         font-size: var(--fs-xxl2);
 }
 
 /* font-weight */
-.fw-400{
+.fw-400 {
         font-weight: var(--fw-400);
 }
-.fw-500{
+
+.fw-500 {
         font-weight: var(--fw-500);
 }
-.fw-600{
+
+.fw-600 {
         font-weight: var(--fw-600);
 }
-.fw-700{
+
+.fw-700 {
         font-weight: var(--fw-700);
 }
 
 /* colors */
-.black{
+.black {
         color: var(--color-black);
 }
-.white{
+
+.white {
         color: var(--color-white);
 }
-.blue{
+
+.blue {
         color: var(--color-blue);
 }
-.dark-blue{
+
+.dark-blue {
         color: var(--color-dark-blue);
 }
-.light-blue{
+
+.light-blue {
         color: var(--color-light-blue);
 }
-.black-2{
+
+.black-2 {
         color: var(--color-black-2);
 }
-.gray{
+
+.gray {
         color: var(--color-gray);
 }
-.bg-black{
+
+.bg-black {
         background: var(--color-black);
 }
 
 @media (min-width:567px) {
-        :root{
+        :root {
                 /* font-seze */
                 --fs-sm: 12px;
                 --fs-sm1: 14px;
@@ -118,10 +138,10 @@
                 --fs-xxl: 36px;
                 --fs-xxl1: 48px;
                 --fs-xxl2: 64px;
-              
-              
-        
+
+
+
         }
-           
-        
+
+
 }
