@@ -728,6 +728,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .mt-126 {
@@ -947,6 +949,11 @@ animation-timing-function: linear;
 
   .pt-100 {
     padding-top: 100px;
+  }
+
+  .show-moref {   
+    padding: 13px;
+    text-align: center;
   }
 }
 
