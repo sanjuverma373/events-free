@@ -529,7 +529,7 @@ background: rgba(44, 73, 254, 0.74);
   border-radius: 5px;
   border: 1px solid #2C49FE;
   background: #FFF; 
-  margin-right: 15px;
+  margin-right: 0px;
   margin-top: 50px;
   transition: .4s;
   padding-top: 15px;
@@ -979,6 +979,10 @@ animation-timing-function: linear;
     width: 58.33%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .card1 {   
+    margin-right: 15px;   
   }
 
 }
